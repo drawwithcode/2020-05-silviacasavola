@@ -31,13 +31,14 @@ function setup() {
   push();
   textSize(30);
   textFont(myFont)
-  text("Prove you're not a robot. Circle all the traffic lights.", 50, 50);
+  text("I am not a robot.", 50, 50);
   pop()
 
   let dist = 220;
 
   checkbox = createCheckbox('', false);
-  checkbox.position(100, 100)
+  checkbox.position(50, 100);
+  checkbox.size(20, 20);
   checkbox.changed(proveit);
 }
 
