@@ -3,7 +3,7 @@ let myColor = "white"
 
 let dist = 220;
 let margin_left = 100;
-let margin_top = -50;
+let margin_top = -52;
 let size = 200;
 
 socket.on("connect", newConnection);
