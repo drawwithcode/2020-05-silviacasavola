@@ -41,15 +41,15 @@ function setColor(assignedColor){
 
 function draw() {
   //images
-  image(img1, windowWidth/3, windowHeight/3, 300, 300);
-  image(img2, windowWidth/3, windowHeight/3, 300, 300);
-  image(img3, windowWidth/3, windowHeight/3, 300, 300);
-  image(img4, windowWidth/2, windowHeight/2, 300, 300);
-  image(img5, windowWidth/2, windowHeight/2, 300, 300);
-  image(img6, windowWidth/2, windowHeight/2, 300, 300);
-  image(img7, (windowWidth/3)*2, (windowHeight/3)*2, 300, 300);
-  image(img8, (windowWidth/3)*2, (windowHeight/3)*2, 300, 300);
-  image(img9, (windowWidth/3)*2, (windowHeight/3)*2, 300, 300);
+  image(img1, windowWidth/3, windowHeight/3, 250, 250);
+  image(img2, windowWidth/3, windowHeight/3, 250, 250);
+  image(img3, windowWidth/3, windowHeight/3, 250, 250);
+  image(img4, windowWidth/2, windowHeight/2, 250, 250);
+  image(img5, windowWidth/2, windowHeight/2, 250, 250);
+  image(img6, windowWidth/2, windowHeight/2, 250, 250);
+  image(img7, (windowWidth/3)*2, (windowHeight/3)*2, 250, 250);
+  image(img8, (windowWidth/3)*2, (windowHeight/3)*2, 250, 250);
+  image(img9, (windowWidth/3)*2, (windowHeight/3)*2, 250, 250);
 
 
   let message = {
