@@ -34,15 +34,15 @@ function setup() {
 
     //images
     imageMode(CENTER);
-    image(img1, windowWidth/3, windowHeight/8, 210, 210);
-    image(img2, windowWidth/3, windowHeight/8, 210, 210);
-    image(img3, windowWidth/3, windowHeight/8, 210, 210);
+    image(img1, windowWidth/3, windowHeight/3, 210, 210);
+    image(img2, windowWidth/3, windowHeight/3, 210, 210);
+    image(img3, windowWidth/3, windowHeight/3, 210, 210);
     image(img4, windowWidth/2, windowHeight/2, 210, 210);
     image(img5, windowWidth/2, windowHeight/2, 210, 210);
     image(img6, windowWidth/2, windowHeight/2, 210, 210);
-    image(img7, (windowWidth/3)*2, (windowHeight/8)*6, 210, 210);
-    image(img8, (windowWidth/3)*2, (windowHeight/8)*6, 210, 210);
-    image(img9, (windowWidth/3)*2, (windowHeight/8)*6, 210, 210);
+    image(img7, (windowWidth/3)*2, (windowHeight/3)*2, 210, 210);
+    image(img8, (windowWidth/3)*2, (windowHeight/3)*2, 210, 210);
+    image(img9, (windowWidth/3)*2, (windowHeight/3)*2, 210, 210);
 
 }
 
