@@ -36,7 +36,7 @@ function setup() {
 
   let dist = 220;
 
-  checkbox = createCheckbox('robot', false);
+  checkbox = createCheckbox('', false);
   checkbox.position(100, 100)
   checkbox.changed(proveit);
 }
