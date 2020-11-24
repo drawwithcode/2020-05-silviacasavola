@@ -78,9 +78,11 @@ function drawOtherMouse(data) {
 }
 
 function mouseDragged() {
+  if (mouseX >= windowWidth/2 - 320 && mouseX <= windowWidth/2 + 320 && mouseY >= windowHeight/4-100 && mouseY <= windowHeight/4 + 540) {
   push();
   noStroke();
   fill(myColor);
   ellipse(mouseX, mouseY, 10);
   pop();
+}
 }
