@@ -36,12 +36,12 @@ function setup() {
   push();
   textSize(25);
   textFont(myFont)
-  text("I am not a robot.", 50, 51);
+  text("I am not a robot.", 50, 53);
   pop()
 
   checkbox = createCheckbox('', false);
-  checkbox.position(270, 32);
-  checkbox.style("transform", "scale(1.5)")
+  checkbox.position(270, 35);
+  checkbox.style("transform", "scale(1.4)")
   checkbox.changed(proveit);
 }
 
