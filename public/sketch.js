@@ -1,5 +1,10 @@
 let socket = io();
-let myColor = "white;"
+let myColor = "white"
+
+let dist = 220;
+let margin_left = 100;
+let margin_top = -50;
+let size = 200;
 
 socket.on("connect", newConnection);
 socket.on("mouseBroadcast", drawOtherMouse);
@@ -49,10 +54,6 @@ function setColor(assignedColor){
 }
 
 function proveit() {
-  let dist = 220;
-  let margin_left = windowWidth/15;
-  let margin_top = -50;
-  let size = 200;
 
   push();
   textSize(25);
@@ -94,10 +95,6 @@ function drawOtherMouse(data) {
 }
 
 function mouseDragged() {
-  let dist = 220;
-  let margin_left = windowWidth/15;
-  let margin_top = -50;
-  let size = 200;
 
   if (mouseX > windowWidth/2 - dist - size/2 + margin_left && mouseX < windowWidth/2 + dist + size/2 + margin_left && mouseY > windowHeight/4 - size/2 + margin_top && mouseY < windowHeight/4 + dist*2 + size/2 + margin_top) {
   push();
