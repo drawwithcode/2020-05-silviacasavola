@@ -3,7 +3,7 @@ let myColor = "white"
 
 let dist = 220;
 let margin_left = 100;
-let margin_top = -52;
+let margin_top = -20;
 let size = 200;
 
 socket.on("connect", newConnection);
@@ -36,11 +36,11 @@ function setup() {
   push();
   textSize(25);
   textFont(myFont)
-  text("I am not a robot.", 50, 53);
+  text("I am not a robot.", 45, 45);
   pop()
 
   checkbox = createCheckbox('', false);
-  checkbox.position(270, 35);
+  checkbox.position(270, 28);
   checkbox.style("transform", "scale(1.4)")
   checkbox.changed(proveit);
 }
@@ -58,7 +58,7 @@ function proveit() {
   push();
   textSize(25);
   textFont(myFont)
-  text("Prove it. \nCircle all the street lights.", 50, 101);
+  text("Prove it. Circle all the street lights.", windowWidth/2 - dist - size/2 + margin_left, 45);
   pop()
 
     //images
