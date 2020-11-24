@@ -1,5 +1,5 @@
 let socket = io();
-let myColor = "white";
+let myColor = "white;"
 
 socket.on("connect", newConnection);
 socket.on("mouseBroadcast", drawOtherMouse);
@@ -29,16 +29,14 @@ function setup() {
   createCanvas(windowWidth,windowHeight)
 
   push();
-  textSize(30);
+  textSize(25);
   textFont(myFont)
   text("I am not a robot.", 50, 50);
   pop()
 
-  let dist = 220;
-
   checkbox = createCheckbox('', false);
-  checkbox.position(50, 100);
-  checkbox.size(20, 20);
+  checkbox.position(270, 31);
+  checkbox.style("transform", "scale(1.5)")
   checkbox.changed(proveit);
 }
 
@@ -51,17 +49,28 @@ function setColor(assignedColor){
 }
 
 function proveit() {
+  let dist = 220;
+  let margin_left = windowWidth/15;
+  let margin_top = -50;
+  let size = 200;
+
+  push();
+  textSize(25);
+  textFont(myFont)
+  text("Prove it. \nCircle all the street lights.", 50, 100);
+  pop()
+
     //images
     imageMode(CENTER);
-    image(img1, windowWidth/2 - dist, windowHeight/4, 200, 200);
-    image(img2, windowWidth/2, windowHeight/4, 200, 200);
-    image(img3, windowWidth/2 + dist, windowHeight/4, 200, 200);
-    image(img4, windowWidth/2 - dist, windowHeight/4 + dist, 200, 200);
-    image(img5, windowWidth/2, windowHeight/4 + dist, 200, 200);
-    image(img6, windowWidth/2 + dist, windowHeight/4 + dist, 200, 200);
-    image(img7, windowWidth/2 - dist, windowHeight/4 + dist*2, 200, 200);
-    image(img8, windowWidth/2, windowHeight/4 + dist*2, 200, 200);
-    image(img9, windowWidth/2 + dist, windowHeight/4 + dist*2, 200, 200);
+    image(img1, windowWidth/2 - dist + margin_left, windowHeight/4 + margin_top, size, size);
+    image(img2, windowWidth/2 + margin_left, windowHeight/4 + margin_top, size, size);
+    image(img3, windowWidth/2 + dist + margin_left, windowHeight/4 + margin_top, size, size);
+    image(img4, windowWidth/2 - dist + margin_left, windowHeight/4 + dist + margin_top, size, size);
+    image(img5, windowWidth/2 + margin_left, windowHeight/4 + dist + margin_top, size, size);
+    image(img6, windowWidth/2 + dist + margin_left, windowHeight/4 + dist + margin_top, size, size);
+    image(img7, windowWidth/2 - dist + margin_left, windowHeight/4 + dist*2 + margin_top, size, size);
+    image(img8, windowWidth/2 + margin_left, windowHeight/4 + dist*2 + margin_top, size, size);
+    image(img9, windowWidth/2 + dist + margin_left, windowHeight/4 + dist*2 + margin_top, size, size);
 }
 
 
@@ -85,7 +94,12 @@ function drawOtherMouse(data) {
 }
 
 function mouseDragged() {
-  if (mouseX >= windowWidth/2 - 320 && mouseX <= windowWidth/2 + 320 && mouseY >= windowHeight/4-100 && mouseY <= windowHeight/4 + 540) {
+  let dist = 220;
+  let margin_left = windowWidth/15;
+  let margin_top = -50;
+  let size = 200;
+
+  if (mouseX > windowWidth/2 - dist - size/2 + margin_left && mouseX < windowWidth/2 + dist + size/2 + margin_left && mouseY > windowHeight/4 - size/2 + margin_top && mouseY < windowHeight/4 + dist*2 + size/2 + margin_top) {
   push();
   noStroke();
   fill(myColor);
