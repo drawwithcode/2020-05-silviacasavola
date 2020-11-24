@@ -40,9 +40,9 @@ function setup() {
     image(img4, windowWidth/3, windowHeight/2, 210, 210);
     image(img5, windowWidth/2, windowHeight/2, 210, 210);
     image(img6, (windowWidth/3)*2, windowHeight/2, 210, 210);
-    image(img7, windowWidth/3, (windowHeight/3)*2, 210, 210);
-    image(img8, windowWidth/2, (windowHeight/3)*2, 210, 210);
-    image(img9, (windowWidth/3)*2, (windowHeight/3)*2, 210, 210);
+    image(img7, windowWidth/3, (windowHeight/4)*3, 210, 210);
+    image(img8, windowWidth/2, (windowHeight/4)*3, 210, 210);
+    image(img9, (windowWidth/3)*2, (windowHeight/4)*3, 210, 210);
 
 }
 
