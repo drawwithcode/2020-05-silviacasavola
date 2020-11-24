@@ -36,6 +36,12 @@ function setup() {
 
   let dist = 220;
 
+  function setup() {
+  let check = createCheckbox();
+  check.position(100, 100)
+  // inp.input(myInputEvent);
+}
+
     //images
     imageMode(CENTER);
     image(img1, windowWidth/2 - dist, windowHeight/4, 200, 200);
