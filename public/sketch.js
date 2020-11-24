@@ -34,7 +34,7 @@ function setup() {
 
     //images
     imageMode(CENTER);
-    image(img1, windowWidth/3, windowHeight/3, 210, 210);
+    image(img1, windowWidth/3, windowHeight/6, 210, 210);
     image(img2, windowWidth/3, windowHeight/3, 210, 210);
     image(img3, windowWidth/3, windowHeight/3, 210, 210);
     image(img4, windowWidth/2, windowHeight/2, 210, 210);
