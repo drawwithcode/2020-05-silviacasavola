@@ -10,14 +10,6 @@ function newPlayer(newPlayerColor) {
   console.log(newPlayerColor);
 }
 
-function setup() {
-  createCanvas(windowWidth,windowHeight)
-
-  push();
-  textSize(30);
-  text("Prove you're not a robot. Circle all the traffic lights.", 50, 50);
-  pop()
-}
 
 function preload() {
   img1 = loadImage('assets/img1.png');
@@ -31,6 +23,28 @@ function preload() {
   img9 = loadImage('assets/img9.png');
 }
 
+function setup() {
+  createCanvas(windowWidth,windowHeight)
+
+  push();
+  textSize(30);
+  text("Prove you're not a robot. Circle all the traffic lights.", 50, 50);
+  pop()
+
+
+    //images
+    image(img1, windowWidth/6, windowHeight/8, 210, 210);
+    image(img2, windowWidth/6, windowHeight/8, 210, 210);
+    image(img3, windowWidth/6, windowHeight/8, 210, 210);
+    image(img4, windowWidth/2, windowHeight/2, 210, 210);
+    image(img5, windowWidth/2, windowHeight/2, 210, 210);
+    image(img6, windowWidth/2, windowHeight/2, 210, 210);
+    image(img7, (windowWidth/6)*5, (windowHeight/8)*6, 210, 210);
+    image(img8, (windowWidth/6)*5, (windowHeight/8)*6, 210, 210);
+    image(img9, (windowWidth/6)*5, (windowHeight/8)*6, 210, 210);
+
+}
+
 function newConnection() {
   console.log("your id: " + socket.id);
 }
@@ -40,17 +54,6 @@ function setColor(assignedColor){
 }
 
 function draw() {
-  //images
-  image(img1, windowWidth/6, windowHeight/8, 210, 210);
-  image(img2, windowWidth/6, windowHeight/8, 210, 210);
-  image(img3, windowWidth/6, windowHeight/8, 210, 210);
-  image(img4, windowWidth/2, windowHeight/2, 210, 210);
-  image(img5, windowWidth/2, windowHeight/2, 210, 210);
-  image(img6, windowWidth/2, windowHeight/2, 210, 210);
-  image(img7, (windowWidth/6)*5, (windowHeight/8)*6, 210, 210);
-  image(img8, (windowWidth/6)*5, (windowHeight/8)*6, 210, 210);
-  image(img9, (windowWidth/6)*5, (windowHeight/8)*6, 210, 210);
-
 
   let message = {
     x: mouseX,
