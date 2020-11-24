@@ -31,11 +31,11 @@ function setup() {
   push();
   textSize(25);
   textFont(myFont)
-  text("I am not a robot.", 50, 50);
+  text("I am not a robot.", 50, 51);
   pop()
 
   checkbox = createCheckbox('', false);
-  checkbox.position(270, 31);
+  checkbox.position(270, 32);
   checkbox.style("transform", "scale(1.5)")
   checkbox.changed(proveit);
 }
@@ -57,7 +57,7 @@ function proveit() {
   push();
   textSize(25);
   textFont(myFont)
-  text("Prove it. \nCircle all the street lights.", 50, 100);
+  text("Prove it. \nCircle all the street lights.", 50, 101);
   pop()
 
     //images
