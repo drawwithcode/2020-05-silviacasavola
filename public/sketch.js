@@ -47,7 +47,7 @@ function draw() {
   image(img4, windowWidth/2, windowHeight/2, 210, 210);
   image(img5, windowWidth/2, windowHeight/2, 210, 210);
   image(img6, windowWidth/2, windowHeight/2, 210, 210);
-  image(img7, (windowWidth/3)*2, (windowHeight/8*5, 210, 210);
+  image(img7, (windowWidth/3)*2, (windowHeight/8)*5, 210, 210);
   image(img8, (windowWidth/3)*2, (windowHeight/8)*5, 210, 210);
   image(img9, (windowWidth/3)*2, (windowHeight/8)*5, 210, 210);
 
