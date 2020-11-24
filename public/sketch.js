@@ -36,12 +36,20 @@ function setup() {
 
   let dist = 220;
 
-  function setup() {
-  let check = createCheckbox();
-  check.position(100, 100)
-  // inp.input(myInputEvent);
+  checkbox = createCheckbox('robot', false);
+  checkbox.position(100, 100)
+  checkbox.changed(proveit);
 }
 
+function newConnection() {
+  console.log("your id: " + socket.id);
+}
+
+function setColor(assignedColor){
+  myColor = assignedColor;
+}
+
+function proveit() {
     //images
     imageMode(CENTER);
     image(img1, windowWidth/2 - dist, windowHeight/4, 200, 200);
@@ -53,16 +61,8 @@ function setup() {
     image(img7, windowWidth/2 - dist, windowHeight/4 + dist*2, 200, 200);
     image(img8, windowWidth/2, windowHeight/4 + dist*2, 200, 200);
     image(img9, windowWidth/2 + dist, windowHeight/4 + dist*2, 200, 200);
-
 }
 
-function newConnection() {
-  console.log("your id: " + socket.id);
-}
-
-function setColor(assignedColor){
-  myColor = assignedColor;
-}
 
 function draw() {
 
