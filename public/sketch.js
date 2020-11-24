@@ -3,7 +3,7 @@ let myColor = "white"
 
 let dist = 220;
 let margin_left = 100;
-let margin_top = -20;
+let margin_top = -10;
 let size = 200;
 
 socket.on("connect", newConnection);
@@ -14,7 +14,6 @@ socket.on("newPlayer", newPlayer);
 function newPlayer(newPlayerColor) {
   console.log(newPlayerColor);
 }
-
 
 function preload() {
   img1 = loadImage('assets/img1.png');
