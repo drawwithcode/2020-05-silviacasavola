@@ -21,6 +21,8 @@ function preload() {
   img7 = loadImage('assets/img7.png');
   img8 = loadImage('assets/img8.png');
   img9 = loadImage('assets/img9.png');
+
+  myFont = loadFont("assets/Whyte-Book.ttf")
 }
 
 function setup() {
@@ -28,6 +30,7 @@ function setup() {
 
   push();
   textSize(30);
+  textFont(myFont)
   text("Prove you're not a robot. Circle all the traffic lights.", 50, 50);
   pop()
 
