@@ -31,18 +31,19 @@ function setup() {
   text("Prove you're not a robot. Circle all the traffic lights.", 50, 50);
   pop()
 
+  let dist = 220;
 
     //images
     imageMode(CENTER);
-    image(img1, windowWidth/3, windowHeight/4, 200, 200);
+    image(img1, windowWidth/2 - dist, windowHeight/4, 200, 200);
     image(img2, windowWidth/2, windowHeight/4, 200, 200);
-    image(img3, (windowWidth/3)*2, windowHeight/4, 200, 200);
-    image(img4, windowWidth/3, windowHeight/4 + 230, 200, 200);
-    image(img5, windowWidth/2, windowHeight/4 + 230, 200, 200);
-    image(img6, (windowWidth/3)*2, windowHeight/4 + 230, 200, 200);
-    image(img7, windowWidth/3, windowHeight/4 + 460, 200, 200);
-    image(img8, windowWidth/2, windowHeight/4 + 460, 200, 200);
-    image(img9, (windowWidth/3)*2, windowHeight/4 + 460, 200, 200);
+    image(img3, windowWidth/2 + dist, windowHeight/4, 200, 200);
+    image(img4, windowWidth/2 - dist, windowHeight/4 + dist, 200, 200);
+    image(img5, windowWidth/2, windowHeight/4 + dist, 200, 200);
+    image(img6, windowWidth/2 + dist, windowHeight/4 + dist, 200, 200);
+    image(img7, windowWidth/2 - dist, windowHeight/4 + dist*2, 200, 200);
+    image(img8, windowWidth/2, windowHeight/4 + dist*2, 200, 200);
+    image(img9, windowWidth/2 + dist, windowHeight/4 + dist*2, 200, 200);
 
 }
 
